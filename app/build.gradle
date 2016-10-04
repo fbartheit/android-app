@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.lhs.sensorgui"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    debugCompile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    debugCompile files('libs/opencsv-3.8.jar')
+    debugCompile 'com.android.support:appcompat-v7:23.4.0'
+    debugCompile 'com.android.support:design:23.4.0'
+    debugCompile 'com.android.support:support-v4:23.4.0'
+    debugCompile 'com.android.support:support-v13:23.4.0'
+    debugCompile 'com.github.felHR85:UsbSerial:4.5'
+}

@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragment.LessFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/txtLessTorqueValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="76"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_torque"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_unit_nm"
+                android:textAlignment="center"
+                android:textSize="28sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/txtLessPowerValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="334"
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_power"
+                android:textAlignment="center"
+                android:textSize="46sp"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_unit_watts"
+                android:textAlignment="center"
+                android:textSize="36sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.33"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/txtLessCadenceValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="42"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_cadence"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_unit_rpm"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:textAllCaps="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:src="@drawable/fire"/>
+
+            <TextView
+                android:id="@+id/txtLessCaloriesValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="119 cal"
+                android:textSize="22sp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal|center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_left"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffff0000"
+                android:rotation="270"/>
+
+            <TextView
+                android:id="@+id/txtLessLeftLegPercentValue"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:text="38%"
+                android:textSize="36sp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal|center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_right"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffff0000"
+                android:rotation="270"/>
+
+            <TextView
+                android:id="@+id/txtLessRightLegPercentValue"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:text="72%"
+                android:textSize="36sp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal|center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_distance_short"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffff0000"
+                android:rotation="270"/>
+
+            <TextView
+                android:id="@+id/txtLessDistanceValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="2.8 km"
+                android:textSize="22sp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
